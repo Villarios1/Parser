@@ -114,7 +114,7 @@ int main()
 
     std::string text{ request(url) }; // получаем текстовое представление страницы
 
-    std::cout << scrape(text) << std::endl; // консоль не поймет кириллицу в utf-8
+    //std::cout << scrape(text) << std::endl; // консоль не поймет кириллицу в utf-8
     std::string scrapped{ scrape(text) };
     std::ofstream os("test.txt"); // запишем результат в файл
     if (!os)
